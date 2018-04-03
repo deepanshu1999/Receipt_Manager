@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.deepanshuaggarwal.receiptvault.MainInterface"
+    android:background="@drawable/woodback"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#470A16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Welcome"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#FBF4FF"
+            android:id="@+id/Welcome"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guest"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Welcome"
+            android:gravity="center"
+            android:textColor="#FBF4FF"
+            android:id="@+id/namei"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/layout_bg">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/addnew"
+            android:id="@+id/scan"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Scan Receipt"
+            android:layout_below="@id/scan"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/layout_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/fold"
+            android:id="@+id/receiptview"
+
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receiptview"
+            android:layout_marginLeft="30dp"
+            android:text="View Receipt"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/file"
+            android:id="@+id/extra"
+            android:layout_alignParentRight="true"
+
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/extra"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:text="Options"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
