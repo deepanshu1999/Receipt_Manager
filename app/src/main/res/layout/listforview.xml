@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#F3B8B8">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageid"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receipt No. will come here"
+        android:layout_toRightOf="@id/imageid"
+        android:paddingLeft="10dp"
+        android:id="@+id/receiptnumber"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receipt No. will come here"
+        android:layout_toRightOf="@id/imageid"
+        android:paddingLeft="10dp"
+        android:id="@+id/commenttext"
+        android:layout_below="@id/receiptnumber"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receipt No. will come here"
+        android:layout_toRightOf="@id/imageid"
+        android:paddingLeft="10dp"
+        android:id="@+id/datetext"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>
