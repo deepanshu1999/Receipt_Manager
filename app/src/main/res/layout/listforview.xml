@@ -1,41 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:background="#F3B8B8">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/layout_bg"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageid"
-        />
-    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Receipt No. will come here"
-        android:layout_toRightOf="@id/imageid"
-        android:paddingLeft="10dp"
-        android:id="@+id/receiptnumber"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Receipt No. will come here"
-        android:layout_toRightOf="@id/imageid"
-        android:paddingLeft="10dp"
-        android:id="@+id/commenttext"
-        android:layout_below="@id/receiptnumber"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Receipt No. will come here"
-        android:layout_toRightOf="@id/imageid"
-        android:paddingLeft="10dp"
-        android:id="@+id/datetext"
-        android:gravity="right"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
+        android:layout_height="150dp"
+
         android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageid"
+        android:background="@drawable/border"
+        android:scaleType="fitXY"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Receipt Number: "
+        android:layout_marginTop="10dp"
+        android:id="@+id/receiptnum"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/imageid"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text=": popeye"
+        android:layout_below="@id/receiptnum"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/datenum"
+        android:gravity="right"
+        android:padding="10dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.5"
+        android:visibility="invisible"
+        android:id="@+id/darkingbox"/>
+
 
 </RelativeLayout>

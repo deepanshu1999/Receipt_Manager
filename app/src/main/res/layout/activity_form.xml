@@ -4,136 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
     tools:context="com.example.deepanshuaggarwal.receiptvault.Form"
-    android:background="@drawable/woodback">
+    android:id="@+id/fullayout">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary">
+
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/border"
         android:layout_alignParentTop="true"
-        android:paddingBottom="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
-        android:src="@drawable/defaultt" />
+        android:layout_margin="10dp"
+        android:src="@drawable/defaultt"
+        android:layout_centerHorizontal="true"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WArning"
+            android:text="*Required field"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/category"
+            android:id="@+id/error"
+            android:visibility="invisible"/>
+        <AutoCompleteTextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:layout_below="@id/icon"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:hint="Enter Category Here..."
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:selectAllOnFocus="false" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/comment"
+    android:background="#F5F5F5"
+    android:layout_margin="15dp"
+    android:layout_toLeftOf="@id/submitform"
+    android:paddingTop="10dp"
+    android:padding="10dp"
+   >
     <EditText
-        android:id="@+id/category"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/icon"
-        android:backgroundTint="@color/cardview_light_background"
-        android:hint="Enter Category"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="40dp"
-
-        android:textColor="@color/cardview_light_background"
-        android:textColorHighlight="@color/cardview_light_background"
-        android:textColorHint="@color/cardview_light_background"
-        android:textColorLink="@color/cardview_light_background" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/cardview_light_background"
-        android:layout_toRightOf="@id/icon"
-        android:paddingTop="20dp"
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="match_parent"
         android:hint="Purchase Date"
-        android:layout_below="@id/category"
+
+        android:textColor="#000000"
+
         android:inputType="date"
         android:id="@+id/date"
-
-        android:textColor="@color/cardview_light_background"
-        android:textColorHighlight="@color/cardview_light_background"
-        android:textColorHint="@color/cardview_light_background"
-        android:textColorLink="@color/cardview_light_background"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Additional Information"
-        android:layout_below="@id/icon" 
-        android:gravity="center"
-        android:textSize="20sp"
-        android:backgroundTint="@color/cardview_light_background"
-        android:textStyle="bold"
-        android:id="@+id/addinfo"
-        android:shadowColor="@color/cardview_light_background"
-        android:textColor="@color/cardview_light_background"
-        android:textColorHighlight="@color/cardview_light_background"
-        android:textColorHint="@color/cardview_light_background"
-        android:textColorLink="@color/cardview_light_background"/>
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:src="@drawable/poing"
+        android:onClick="datepicking"/>
+</LinearLayout>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Warranty Period (In months)"
-        android:layout_below="@id/addinfo"
+        android:paddingTop="20dp"
+        android:hint="Warranty(Months)"
+        android:textColor="#000000"
         android:inputType="number"
-        android:backgroundTint="@color/cardview_light_background"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:background="#F5F5F5"
+
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/category"
+
         android:id="@+id/warranty"
-        android:shadowColor="@color/cardview_light_background"
-        android:textColor="@color/cardview_light_background"
-        android:textColorHighlight="@color/cardview_light_background"
-        android:textColorHint="@color/cardview_light_background"
-        android:textColorLink="@color/cardview_light_background"
+
         />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Seller Name"
+        android:layout_margin="15dp"
         android:layout_below="@id/warranty"
         android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:backgroundTint="@color/cardview_light_background"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:background="#F5F5F5"
         android:id="@+id/seller"
-        android:shadowColor="@color/cardview_light_background"
-        android:textColor="@color/cardview_light_background"
-        android:textColorHighlight="@color/cardview_light_background"
-        android:textColorHint="@color/cardview_light_background"
-        android:textColorLink="@color/cardview_light_background"
+
         />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Comment if any......"
+        android:hint="Product Details"
         android:layout_below="@id/seller"
         android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:backgroundTint="@color/cardview_light_background"
-        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:background="#F5F5F5"
+        android:layout_margin="15dp"
+        android:paddingTop="20dp"
         android:id="@+id/comment"
-        android:shadowColor="@color/cardview_light_background"
-        android:textColor="@color/cardview_light_background"
-        android:textColorHighlight="@color/cardview_light_background"
-        android:textColorHint="@color/cardview_light_background"
-        android:textColorLink="@color/cardview_light_background"
+
         />
 
     <Button
         android:id="@+id/submitform"
-        android:layout_width="100dp"
-
+        android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_alignParentRight="true"
         android:layout_below="@id/comment"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-
-        android:src="@drawable/save"
-
-        android:text="Submit"
-        tools:background="?android:attr/colorActivatedHighlight" />
-
-
-
+        android:layout_margin="20dp"
+        android:background="@drawable/sop" />
+    </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
+<!-- add text view here for each block-->
