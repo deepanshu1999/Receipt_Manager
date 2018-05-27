@@ -30,6 +30,7 @@ dependencies {
     implementation 'com.android.support:exifinterface:27.1.0'
     implementation 'com.android.support:design:27.1.0'
     implementation 'com.google.firebase:firebase-storage:11.8.0'
+    implementation 'com.jsibbold:zoomage:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
@@ -39,6 +40,7 @@ dependencies {
     implementation 'com.firebase:firebase-client-android:2.5.0'
     implementation 'com.firebaseui:firebase-ui-auth:3.2.2'
   implementation 'com.github.yalantis:ucrop:2.2.2-native'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.sothree.slidinguppanel:library:3.4.0'
 }

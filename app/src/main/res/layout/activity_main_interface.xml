@@ -13,7 +13,16 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/colorPrimary"
-        android:id="@+id/popy"></RelativeLayout>
+        android:id="@+id/popy">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Receipt Manager"
+           android:layout_centerVertical="true"
+           android:layout_margin="15dp"
+           android:textColor="#FFFFFF"
+           android:textSize="30sp"/>
+    </RelativeLayout>
 
 
    <GridView
@@ -107,16 +116,24 @@
                 android:src="@drawable/delep"
                 android:id="@+id/cancellor"/>
         </RelativeLayout>
-        <ImageView
+        <com.jsibbold.zoomage.ZoomageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/linearlayout"
             android:layout_marginBottom="90dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_autoCenter="true"
+            app:zoomage_zoomable="true"
+            app:zoomage_translatable="true"
+            app:zoomage_minScale="1"
+            app:zoomage_maxScale="10"
             android:layout_marginTop="15dp"
             android:id="@+id/viewer"
-            android:src="@drawable/woodback"/>
+            android:src="@drawable/camy"/>
              <com.sothree.slidinguppanel.SlidingUpPanelLayout
             xmlns:sothree="http://schemas.android.com/apk/res-auto"
             android:id="@+id/sliding_layout"

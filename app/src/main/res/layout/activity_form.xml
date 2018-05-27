@@ -26,10 +26,11 @@
     <ImageView
         android:id="@+id/icon"
         android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_height="375dp"
         android:background="@drawable/border"
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
+        android:padding="1dp"
         android:src="@drawable/defaultt"
         android:layout_centerHorizontal="true"/>
 
